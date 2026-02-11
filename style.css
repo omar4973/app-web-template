@@ -1,0 +1,483 @@
+/* ============================================
+   Mobile-First Responsive Website Styles
+   ============================================ */
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Customize: Base font family */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Customize: Main text color */
+/* Customize: Background color */
+
+/* ============================================
+   Navigation Bar
+   ============================================ */
+
+nav {
+    background-color: #fff;
+    /* Customize: Navigation background color */
+    padding: 1.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+nav .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* ============================================
+   Logo Styles - Supports Both Text and Image
+   ============================================ */
+
+/* Base logo styles (applies to both text and image logos) */
+nav .logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+nav .logo:hover {
+    opacity: 0.8;
+}
+
+/* TEXT LOGO STYLES */
+/* These styles apply when using .logo-text class */
+nav .logo.logo-text {
+    color: #333;
+    /* Customize: Logo text color */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Customize: Logo text size and weight */
+
+/* IMAGE LOGO STYLES */
+/* These styles apply when using .logo-image class */
+nav .logo.logo-image {
+    height: 40px;
+    /* Customize: Logo image height (adjust based on your logo size) */
+}
+
+nav .logo.logo-image img {
+    height: 100%;
+    width: auto;
+    max-width: 200px;
+    /* Customize: Maximum logo width */
+    object-fit: contain;
+}
+
+/* Customize: Logo image dimensions and max-width */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: #333;
+    /* Customize: Navigation link color */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 0.5rem 0;
+}
+
+nav ul li a:hover {
+    color: #666;
+    /* Customize: Navigation link hover color */
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    nav .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    /* Mobile logo adjustments */
+    nav .logo.logo-text {
+        font-size: 1.25rem;
+        /* Customize: Mobile logo text size */
+    }
+
+    nav .logo.logo-image {
+        height: 35px;
+        /* Customize: Mobile logo image height */
+    }
+}
+
+/* ============================================
+   Container
+   ============================================ */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Customize: Maximum content width */
+
+/* ============================================
+   Hero Section (Home Page)
+   ============================================ */
+
+.hero {
+    background-color: #fff;
+    /* Customize: Hero background color */
+    color: #333;
+    padding: 4rem 1rem 6rem;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* Customize: Hero container max width and gap */
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 2.75rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.2;
+    text-align: left;
+}
+
+/* Customize: Hero heading size, weight, and color */
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+    color: #333;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Customize: Hero subheading size and color */
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 0.875rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #333;
+    border: 2px solid #e0e0e0;
+    /* Customize: Outline button border color */
+}
+
+.btn-outline:hover {
+    border-color: #333;
+    background-color: #f8f8f8;
+}
+
+.btn-primary {
+    background-color: #ebebeb;
+    /* Customize: Primary button background color */
+    color: #333;
+    border: 2px solid transparent;
+}
+
+.btn-primary:hover {
+    background-color: #d0d0d0;
+    transform: translateY(-1px);
+}
+
+/* Customize: Button hover effects */
+
+.hero-illustration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.hero-illustration svg {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+/* Wavy background element */
+.hero-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: #f8f8f8;
+    /* Customize: Wave background color */
+    clip-path: ellipse(80% 100% at 20% 100%);
+    z-index: 1;
+}
+
+/* Customize: Wave shape and color */
+
+/* Mobile Hero */
+@media (max-width: 968px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .hero-text {
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2.25rem;
+        text-align: center;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-illustration {
+        order: -1;
+    }
+
+    .hero-illustration svg {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 3rem 1rem 5rem;
+        min-height: auto;
+    }
+
+    .hero-container {
+        gap: 2rem;
+    }
+
+    .hero h1 {
+        font-size: 1.75rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    .hero-illustration svg {
+        max-width: 250px;
+    }
+}
+
+/* ============================================
+   Content Section
+   ============================================ */
+
+.content-section {
+    padding: 3rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+/* Customize: Main page heading */
+
+.content-section .release-date {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+/* Customize: Release date styling */
+
+.content-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 2.5rem;
+    color: #2c3e50;
+}
+
+/* Customize: Section heading color */
+
+.content-section h3 {
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    color: #34495e;
+    font-weight: 600;
+}
+
+/* Customize: Subsection heading color */
+
+.content-section strong {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.content-section a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.content-section a:hover {
+    text-decoration: underline;
+}
+
+.content-section p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.content-section ul,
+.content-section ol {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.content-section li {
+    margin-bottom: 0.5rem;
+}
+
+/* Mobile Content */
+@media (max-width: 768px) {
+    .content-section {
+        padding: 2rem 1rem;
+    }
+
+    .content-section h1 {
+        font-size: 2rem;
+    }
+
+    .content-section h2 {
+        font-size: 1.75rem;
+    }
+
+    .content-section h3 {
+        font-size: 1.25rem;
+    }
+
+    .content-section p {
+        font-size: 1rem;
+    }
+}
+
+/* ============================================
+   Footer
+   ============================================ */
+
+footer {
+    background-color: #34495e;
+    /* Customize: Footer background color */
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: auto;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+/* Customize: Footer link color */
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ============================================
+   Layout (Full Height)
+   ============================================ */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Customize: Update title for your website -->
+    <title>Home - App Store Website</title>
+    <!-- Link to the main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container">
+            <!-- ============================================
+                 LOGO OPTION: Choose ONE of the following
+                 ============================================ -->
+            
+            <!-- OPTION 1: TEXT LOGO (Currently Active) -->
+            <!-- To use text logo: Keep this uncommented and comment out OPTION 2 -->
+            <a href="index.html" class="logo logo-text">App Store</a>
+            
+            <!-- OPTION 2: IMAGE LOGO (Currently Commented Out) -->
+            <!-- To use image logo: 
+                 1. Comment out OPTION 1 above
+                 2. Uncomment the line below
+                 3. Replace "logo.png" with your actual logo image filename
+                 4. Place your logo image in the same directory as this HTML file
+                 5. Adjust the alt text to describe your logo
+            -->
+            <!-- <a href="index.html" class="logo logo-image">
+                <img src="logo.png" alt="App Store Logo" />
+            </a> -->
+            
+            <ul>
+                <!-- Navigation links - customize as needed -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-container">
+                <!-- Left Column: Text Content -->
+                <div class="hero-text">
+                    <!-- Customize: Main heading text -->
+                    <h1>A Pensive gaming company who believes in quality ONLY!</h1>
+                    <!-- Customize: Subheading text -->
+                    <p>We love to make stunning games that can entertain you with their unique story.</p>
+                    <!-- Customize: Button text and link destinations -->
+                    <div class="hero-buttons">
+                        <a href="privacy.html" class="btn btn-outline">More info</a>
+                        <a href="privacy.html" class="btn btn-primary">Get started</a>
+                    </div>
+                </div>
+                <!-- Right Column: Illustration -->
+                <div class="hero-illustration">
+                    <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Bullseye with arrow -->
+                        <circle cx="100" cy="100" r="30" fill="none" stroke="#333" stroke-width="2"/>
+                        <circle cx="100" cy="100" r="20" fill="none" stroke="#333" stroke-width="2"/>
+                        <circle cx="100" cy="100" r="10" fill="#333"/>
+                        <line x1="70" y1="100" x2="50" y2="100" stroke="#ff6b35" stroke-width="3" stroke-linecap="round"/>
+                        <polygon points="50,100 40,95 40,105" fill="#ff6b35"/>
+                        
+                        <!-- Gear icon -->
+                        <circle cx="300" cy="120" r="25" fill="#ffd23f" stroke="#333" stroke-width="2"/>
+                        <circle cx="300" cy="120" r="15" fill="#fff"/>
+                        <circle cx="300" cy="120" r="8" fill="#333"/>
+                        
+                        <!-- Document icon -->
+                        <rect x="80" y="200" width="60" height="80" fill="none" stroke="#333" stroke-width="2"/>
+                        <line x1="90" y1="220" x2="130" y2="220" stroke="#333" stroke-width="1" stroke-dasharray="3,3"/>
+                        <line x1="90" y1="240" x2="130" y2="240" stroke="#333" stroke-width="1" stroke-dasharray="3,3"/>
+                        <line x1="90" y1="260" x2="120" y2="260" stroke="#333" stroke-width="1" stroke-dasharray="3,3"/>
+                        
+                        <!-- Magnifying glass -->
+                        <circle cx="200" cy="240" r="20" fill="none" stroke="#333" stroke-width="2"/>
+                        <line x1="215" y1="255" x2="235" y2="275" stroke="#ffd23f" stroke-width="3" stroke-linecap="round"/>
+                        
+                        <!-- Graph with plus -->
+                        <polyline points="250,180 270,160 290,150 310,140" fill="none" stroke="#333" stroke-width="2"/>
+                        <circle cx="250" cy="180" r="4" fill="#333"/>
+                        <circle cx="270" cy="160" r="4" fill="#333"/>
+                        <circle cx="290" cy="150" r="4" fill="#333"/>
+                        <circle cx="310" cy="140" r="4" fill="#333"/>
+                        <text x="320" y="135" font-size="20" fill="#333" font-weight="bold">+</text>
+                        
+                        <!-- Cloud icons -->
+                        <path d="M150 320 Q140 310 130 320 Q120 330 130 340 Q140 350 150 340 Q160 350 170 340 Q180 330 170 320 Q160 310 150 320" fill="#87ceeb" stroke="#333" stroke-width="1"/>
+                        <path d="M220 300 Q210 290 200 300 Q190 310 200 320 Q210 330 220 320 Q230 330 240 320 Q250 310 240 300 Q230 290 220 300" fill="#87ceeb" stroke="#333" stroke-width="1"/>
+                        
+                        <!-- Math operators and connectors -->
+                        <text x="180" y="200" font-size="24" fill="#333" font-weight="bold">&gt;</text>
+                        <text x="240" y="200" font-size="24" fill="#333" font-weight="bold">=</text>
+                        <text x="200" y="300" font-size="24" fill="#333" font-weight="bold">+</text>
+                    </svg>
+                </div>
+            </div>
+            <!-- Wavy background element -->
+            <div class="hero-wave"></div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <!-- Customize: Footer text -->
+            <p>&copy; 2026 App Store Website. All rights reserved.</p>
+            <p>
+                <a href="privacy.html">Privacy Policy</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
